@@ -1,0 +1,77 @@
+@font-face {
+    font-family: happyFont;
+    src: url(myfont.woff2);
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(silence.ttf);
+}
+
+*, body{
+    font-family: happyFont;
+}
+
+.signup, .discover, .uncover, .paradise, .adventure, .explore{
+    font-family: myFont;
+}
+.top-section{
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3) ), url('/images/phi.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.ocean{
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4) ), url('/images/paddlingOcean.jpeg');
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.savings{
+    margin-top: 20px;
+    width: 100%;
+    background: linear-gradient( rgba(1, 22, 82, 0.9), rgba(1, 22, 104, 0.8) ), url('/images/kayak.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card{
+    box-shadow: 0px 1px 13px 0px rgba(145,143,143,0.75);
+-webkit-box-shadow: 0px 1px 13px 0px rgba(145,143,143,0.75);
+-moz-box-shadow: 0px 1px 13px 0px rgba(145,143,143,0.75);
+}
+
+.half-moon{
+    height: 30px;
+    width: 30px;
+    box-shadow: -15px 15px 0 0px rgb(225, 134, 64)  ;
+    border-radius: 20%;
+  }
+
+  /* The animation code */
+@keyframes toRight {
+    0%   {transform: translateX(-100px);}
+    100%   {transform: translateX(0px);}
+  }
+
+@keyframes toLeft {
+    0%   {transform: translateX(0px);}
+    100%   {transform: translateX(-580px);}
+  }
+  
+  /* The element to apply the animation to */
+  .toRight {
+    animation-name: toRight;
+    animation-duration: 1s;
+  }
+  .toLeft {
+    animation-name: toLeft;
+    animation-duration: 1s;
+  }
+
+  .show{
+      transform: translateX(150px);
+  }
